@@ -1,0 +1,11 @@
+.t{
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    border: 1pz solid palevioletred;
+    background-color: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    
+}

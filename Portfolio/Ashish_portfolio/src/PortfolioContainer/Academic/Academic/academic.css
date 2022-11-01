@@ -1,0 +1,366 @@
+* {
+
+   font-family: sans-serif;
+}
+
+.Academic {
+   width: 100%;
+   height: 100vh;
+   margin-top: 100px;
+
+}
+
+.container {
+
+   width: 70%;
+
+}
+
+.nav-link {
+   color: rgb(240, 240, 255);
+   font-weight: 900;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: larger;
+   border: 2px solid rgb(92, 29, 144);
+
+
+}
+
+.nav-link:hover {
+   background-color: rgb(106, 106, 246);
+   color: black;
+}
+
+.container-card-academic {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 150px;
+
+
+
+
+
+}
+
+.card {
+   height: 150px;
+   width: 200px;
+   transition: 0.3s;
+   padding: 20px 30px;
+   background: rgb(11, 11, 11);
+   
+  border: 2px solid whitesmoke;
+   color: rgb(146, 160, 160);
+   border-radius: 15px;
+   box-shadow: 5px 5px 15px rgb(55, 34, 34);
+}
+
+.card:hover {
+   height: 170px;
+   width: 210px;
+   box-shadow: 0px 5px 25px rgb(80, 77, 77);
+
+
+}
+
+.card:hover img {
+   opacity: 0;
+}
+
+.imgbox {
+
+   width: 100%;
+   height: 100%;
+
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   box-shadow: 5px 5px 20px rgb(83, 57, 57);
+}
+
+.content {
+
+   text-align: center;
+   transform: translateY(-450px);
+   opacity: 0;
+}
+
+.card:hover .content {
+   opacity: 1;
+   transform: translateY(-130px);
+}
+
+.content h1 {
+   font-size: 18px;
+   font-weight: bold;
+   color: #fff;
+
+}
+
+h2 {
+   font-size: 15px;
+
+}
+
+
+h3 {
+   font-size: 12px;
+
+}
+
+h4 {
+   font-size: 10px;
+
+}
+
+@media screen and (max-width:1000px) {
+
+
+   .container-card-academic {
+      margin-top: 20px;
+
+   }
+
+   .card {
+
+      height: 80px;
+      width: 150px;
+      margin: 0;
+
+
+   }
+
+   .nav-link {
+      font-size: 10px;
+   
+
+   }
+
+   .container-card-academic {
+      flex-direction: column;
+
+   }
+
+   .card {
+      margin-bottom: 40px;
+   }
+
+}
+
+@media screen and (max-width:475px) {
+   .container {
+
+      width: 90%;
+
+   }
+
+   .nav-link {
+      font-size: 8.6px;
+   }
+}
+
+.skill-bar {
+   color: #fff;
+   border-radius: 3px;
+   margin-top: 20px;
+   justify-content: center;
+   align-items: center;
+   background-color: #2b1c1c;
+   border-radius: 20px;
+   padding: 20px 25px;
+   background: black;
+   box-shadow: rgba(249, 242, 242, 0.17) 0px -23px 25px 0px inset, rgba(246, 241, 241, 0.15) 0px -36px 30px 0px inset, rgba(240, 231, 231, 0.1) 0px -79px 40px 0px inset, rgba(236, 226, 226, 0.06) 0px 2px 1px, rgba(246, 236, 236, 0.09) 0px 4px 2px, rgba(239, 230, 230, 0.09) 0px 8px 4px, rgba(246, 242, 242, 0.09) 0px 16px 8px, rgba(238, 226, 226, 0.09) 0px 32px 16px;
+   color: rgb(213, 206, 206);
+}
+
+.skill-bar .bar {
+   margin: 20px;
+}
+
+.skill-bar .bar .info {
+   margin-bottom: 1px;
+
+}
+
+.skill-bar .bar .info span {
+   font-size: 18px;
+   font-weight: bolder;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   opacity: 0;
+   animation: showText 0.5s 1.5s linear forwards;
+
+}
+
+@keyframes showText {
+   100% {
+      opacity: 1;
+   }
+
+}
+
+
+.skill-bar .bar .progress-line {
+
+   height: 8px;
+   width: 100%;
+   transform: scaleX(0);
+   transform-origin: left;
+   background: rgb(222, 219, 219);
+   animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+   border-radius: 4px;
+}
+
+.bar .progress-line span {
+   height: 100%;
+   width: 80%;
+   background: rgb(39, 15, 62);
+   position: absolute;
+   border-radius: 10px;
+   transform: scaleX(0);
+   transform-origin: left;
+   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+   100% {
+      transform: scaleX(1);
+   }
+
+}
+
+.progress-line.html span {
+   width: 90%;
+}
+
+.progress-line.css span {
+   width: 70%;
+}
+
+.progress-line.javascript span {
+   width: 75%;
+}
+
+.progress-line.reactjs span {
+   width: 70%;
+}
+
+.progress-line.mongodb span {
+   width: 60%;
+}
+
+.progress-line.nodejs span {
+   width: 40%;
+}
+
+.progress-line.python span {
+   width: 40%;
+}
+
+.skill-bar .bar .progress-line span::before {
+   position: absolute;
+   content: "";
+   right: 0;
+   top: -10px;
+   height: 0;
+   width: 0;
+   border: 7px solid transparent;
+   border-top-color: #000;
+   opacity: 0;
+   animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.skill-bar .bar .progress-line span::after {
+   position: absolute;
+
+   right: 0;
+   top: -27px;
+   color: #fff;
+   font-size: 12px;
+   background: #000;
+   padding: 0px 8px;
+   border-radius: 3px;
+   opacity: 0;
+   animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+   100% {
+      opacity: 1;
+   }
+
+}
+
+.progress-line.html span::after {
+   content: "90%";
+}
+
+.progress-line.css span::after {
+   content: "70%";
+}
+
+.progress-line.javascript span::after {
+   content: "75%";
+}
+
+.progress-line.reactjs span::after {
+   content: "70%";
+}
+
+.progress-line.mongodb span::after {
+   content: "60%";
+}
+
+.progress-line.nodejs span::after {
+   content: "40%";
+}
+
+.progress-line.python span::after {
+   content: "40%";
+}
+
+@media screen and (max-width:1000px) {
+   .skill-bar {
+      margin-top: 40px;
+   }
+
+   .skill-bar .bar {
+      margin: 0px;
+      padding-bottom: 0px;
+   }
+
+   .info {
+      padding-bottom: 18px;
+   }
+
+   .skill-bar .bar .info span {
+      font-size: 10px;
+
+   }
+
+
+
+
+   .project .container {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0px 5px 25px brown;
+
+   }
+
+   .skill-bar .bar .progress-line {
+      height: 5px;
+   }
+}
+
+.Certificate {
+   margin-top: 30px;
+}
+
+.Certificate .container h3 {
+   color: #212529;
+}

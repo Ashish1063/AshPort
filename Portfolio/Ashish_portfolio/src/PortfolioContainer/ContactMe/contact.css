@@ -1,0 +1,338 @@
+ .contact {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+ }
+
+ .email-box,
+ .contact-form {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .row .footer{
+   height: 50%;
+ }
+
+ .email-box img {
+    width: 70%;
+    height: 70%;
+    box-shadow:0px 2px 2px black;
+ 
+
+ }
+ .email-box img:hover{
+ transform: scale(1.245);
+ }
+ 
+
+
+
+
+ .contact-form label {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 2px;
+
+ }
+
+ .contact-form .col {
+
+    display: flex;
+
+ }
+
+ .contact-form .col input {
+    width: 100%;
+ 
+ }
+
+
+ .contact-form input {
+    width: 100%;
+    margin: 0px auto;
+
+    background: #fff;
+    border: 0px solid black;
+    border-radius: 10px;
+    outline: none;
+
+ }
+
+ .fa {
+    margin-right: 10px;
+ }
+
+ .singleItem {
+    margin: 10px 0px;
+    
+ }
+ .contact-form .col .singleItem{
+   width: 75%;
+}
+ textarea {
+    width: 100%;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    background: #fff;
+    padding: 0px 25px;
+   
+ }
+
+ h1 {
+    font-size: xx-large;
+    font-weight: 800;
+ }
+
+
+
+
+ /* CSS */
+ .button-73 {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #ADCFFF 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -.24px;
+   
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.3rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+ }
+
+ .button-73:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+ }
+
+ .button-73:active {
+    transform: scale(1.025);
+ }
+
+ @media (min-width: 768px) {
+    .button-73 {
+      font-size: 1rem;
+      padding: 0.5rem 2rem;
+    }
+ }
+ @media (min-width: 375px) {
+   .button-73 { 
+     font-size: 1rem;
+     padding: 0.2rem 1.5rem;
+     width: 100%;
+     
+   }
+}
+
+
+
+ .msg {
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+    font-style: italic;
+    color: rgb(229, 61, 0);
+    font-weight: 600;
+    background-color: #fff;
+    display: none;
+ }
+
+
+ .contact-form input:hover,
+ textarea:hover {
+   background-color: #ffffff;
+   box-shadow: #d3cbc7 0 -6px 8px inset;
+    transform: scale(1.125);
+ 
+   }
+   textarea:active{
+      transform: scale(1.025);
+   }
+ .contact-form input {
+    padding-left: 10px;
+ }
+
+
+
+
+
+
+ * {
+    margin: 0px;
+    padding: 0px;
+ 
+    
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ }
+
+
+ .footer {
+
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(18, 4, 4);
+ }
+
+ .socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+
+
+ }
+
+ .sci {
+    position: relative;
+    display: flex;
+
+
+ }
+
+ .sci li {
+    list-style: none;
+    
+
+ }
+ .sci li a:hover {
+   background-color: #ffffff;
+   box-shadow: #d3cbc7 0 -6px 8px inset;
+    transform: scale(1.125);
+ 
+   }
+   .sci li a:active{
+      transform: scale(1.025);
+   }
+
+ .sci li::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 14vw;
+    pointer-events: none;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.5s;
+    opacity: 0;
+ }
+
+ .sci li:hover:before {
+    color: rgb(222, 200, 246);
+    opacity: 1;
+    transform: translate(-50%, -170px);
+ }
+
+ .sci li a {
+
+    display: inline-block;
+    background: rgb(6, 6, 6);
+    color: rgb(203, 199, 209);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 2rem;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: rgb(74, 104, 135) 0px 20px 30px -10px;
+    transition: background 0.25s;
+ }
+
+ .sci li a:hover.facebook {
+    background: rgb(50, 44, 241);
+ }
+
+ .sci li a:hover.linkedin {
+    background: rgb(109, 93, 252);
+ }
+
+ .sci li a:hover.instagram {
+    background: rgb(55, 74, 99);
+ }
+
+ .sci li a .fa {
+    transition: 0.25s;
+    pointer-events: none;
+ }
+
+ .sci li a:hover .fa {
+    color: white;
+ }
+
+ .sci li a:hover.socialMedia {
+    background-color: blue;
+ }
+ 
+ 
+
+
+ .footer .address p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ @media screen and (max-width:1000px) {
+ 
+ 
+    .sci li a {
+       width: 50px;
+       height: 50px;
+    }
+
+    .contact-form {
+       padding-right: 40px;
+    }
+
+    .contact-form .singleItem input::placeholder {
+       font-size: 10px;
+    }
+    
+
+ }
+ @media screen and (max-width:475px){
+   .row textarea{
+      padding:px 8px;
+      
+   }
+   .footer .socialMedia{
+       margin-top: 40%;
+   }
+ 
+   
+ }

@@ -1,0 +1,280 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Profile {
+    width: 100%;
+    height: 100vh;
+    background: url("../../../public/bgimage.jpg") fixed center;
+    background-image: url("../../../public/bgimage.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+ 
+ 
+}
+.profile-container {
+    width: 100%;
+    height: 100vh;
+   display: flex;
+  justify-content: center;
+    align-items: center;
+    align-items: center;
+ 
+    margin-top: 0;
+    
+    
+    
+    
+}
+ 
+.profile-parent{
+    
+    color: aliceblue;
+    
+}
+.profile-details-name{
+    font-size: 50px;
+    
+}
+.profile-details-name span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+.profile-details-name span strong{
+    font-family: cursive;
+   
+}
+.profile-details-role{
+ 
+    margin: 14px 0 24px 0;
+}
+.profile-details-role h1{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    color: cadetblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.profile-detail-tagline{
+    font-size: 25px;
+    margin: 5px 0 0 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.font-weight-normal{
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+/* CSS */
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 9px;
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #606069;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #a49db5c3;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+  
+  .button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+  }
+  
+  .button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+  }
+  
+
+
+
+
+ 
+ 
+.profile-picture{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 0 0 white;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin: 0 0 0 100px;
+}
+.profile-picture-background{
+    height: 95%;
+    width: 95%;
+    background-image: url("../Home/profilemImage.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ 
+.profile-picture-background:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+ 
+.colz .colz-icon i{
+    color: #e0ffff;
+    padding: 20px;
+    margin: 0px auto 0px;
+    justify-content: center;
+    font-size: 25px;
+}
+.colz .colz-icon i:hover{
+    transform: scale(2);
+    color: rgb(95, 110, 248);
+}
+.colz-icon{
+    justify-content: center;
+    display: flex;
+}
+.flex{
+    display: inline-block;
+    vertical-align: middle;
+
+}
+.profile-option{
+    display: flex;
+    justify-content: center;
+
+}
+@media screen and (max-width:1025px){
+    .flex{
+        width: 100%;
+    }
+    .profile-picture{
+        height: 250px;
+        width: 250px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+         
+    } 
+    .profile-details{
+        width: 90%;
+    }
+    .profile-option{
+        margin: 20px ;
+        justify-content: space-between;
+    }
+    .profile-detail-tagline{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+@media screen and (max-width:1000px){
+    .Profile{
+        width: 100%;
+    }
+    .profile-container{
+        width: 100%;
+    }
+    .flex{
+        width: 100%;
+    }  
+    .info{
+        padding-top: 10px;
+    }
+.primary-text h1{
+    font-size: 30px;
+}
+.profile-details-role h1{
+    font-size: 25px;
+}
+.profile-details-name{
+    font-size: 14px;
+}
+.profile-detail-tagline{
+    font-size: 15px;
+ 
+}
+.profile-option .btn-primary{
+   
+    width: 28%;
+    font-size: 15px;
+    padding: 5px;
+}
+.profile-option .btn-secondary{
+    flex-direction: row;
+    font-size: 15px;
+   
+    padding: 5px;
+}
+}
+@media screen and (max-width:375px){
+    .Profile{
+       width: 100%;
+    }
+}
+.profile-detail-tagline{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.font-weight-normal{
+    font-size :30px;
+}
+.colz .colz-icon .fa{
+    font-size: 15px;
+}
